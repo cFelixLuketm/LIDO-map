@@ -1,4 +1,7 @@
 
+import { initThreeWorld } from "../three/initThreeWorld";
+import { cameraStates } from "../three/src/constants";
+
 const dateHolders = document.querySelectorAll(".date-holder");
 const canvasElement = document.getElementById('three-canvas');
 const headerTexts = document.querySelectorAll("ul#header1, ul#header2, p#countdown, p#header4, footer#footer");
@@ -142,11 +145,6 @@ if (screenwidth.matches) {
       })
 
 }
-
-
-
-import { initThreeWorld } from "../three/initThreeWorld";
-import { cameraStates } from "../three/src/constants";
 
 // Optional
 const config = {
