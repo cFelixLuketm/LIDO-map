@@ -90,7 +90,7 @@ export function initThreeWorld(canvas, config) {
         .setMeshoptDecoder(MeshoptDecoder);
 
     loader.load(
-        './scene.glb',
+        '../scene.glb',
         function (gltf) {
             // set scene vectors and dependent objects
             gltf.scene.traverse((obj) => {
