@@ -1,0 +1,156 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    color: var(--p_text_color);
+    position: fixed;
+    z-index: 100;
+    top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100vw;
+
+    &_row {
+      width: 100%;
+    }
+
+    a {
+      color: #FF53BE;
+      padding: 5px;
+      display: block;
+
+      &:hover {
+        background-color: #FF53BE;
+        color: var(--p_bg_color);
+      }
+    }
+
+
+    .header_home {
+      font-size: 40px;
+      display: block;
+      line-height: 1;
+    }
+}
+
+div.mobile-stage-selection-wrapper {
+  display: none;
+}
+
+nav.right {
+  display: flex;
+  justify-content: space-between;
+  gap: 10vw;
+}
+
+ul.counter {
+  display: block;
+}
+
+span.countdown-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul#header1, ul#header2, p#countdown, p#header4 {
+  opacity: 0;
+}
+
+
+ul#header1.loaded {
+  opacity: 1;
+  animation: flickerload 0.1s;
+  animation-iteration-count: 2;
+  animation-delay: 0.7s;
+  transition-delay: 0.7s;
+  transition-property: opacity;
+}
+
+ul#header2.loaded {
+  opacity: 1;
+  animation: flickerload 0.1s;
+  animation-iteration-count: 5;
+  animation-delay: 0.2s;
+  transition-delay: 0.2s;
+  transition-property: opacity;
+}
+
+p#countdown.loaded {
+  opacity: 1;
+  animation: flickerload 0.1s;
+  animation-iteration-count: 4;
+  animation-delay: 0.4s;
+  transition-delay: 0.4s;
+  transition-property: opacity;
+}
+
+p#header4.loaded {
+  opacity: 1;
+  animation: flickerload 0.1s;
+  animation-iteration-count: 7;
+  animation-delay: 0.7s;
+  transition-delay: 0.7s;
+  transition-property: opacity;
+}
+
+
+// mobile
+@media (max-width: 750px) {
+  div.mobile-stage-selection-wrapper {
+    display: block;
+    position: absolute;
+    top: 35px;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  span.stage-holder-button {
+    background-color: #918da8;
+    height: fit-content ;
+    height: calc(25px / 1.23);
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+  }
+
+  span.stage-holder-button.loaded:nth-child(1) {
+      opacity: 1;
+      animation: flickerload 0.1s;
+      animation-iteration-count: 7;
+      animation-delay: 0.7s;
+      transition-delay: 0.7s;
+      transition-property: opacity;
+  }
+  
+  span.stage-holder-button.loaded:nth-child(2) {
+      opacity: 1;
+      animation: flickerload 0.1s;
+      animation-iteration-count: 5;
+      animation-delay: 0.6s;
+      transition-delay: 0.6s;
+      transition-property: opacity;
+  }
+  
+  span.stage-holder-button.loaded:nth-child(3) {
+      opacity: 1;
+      animation: flickerload 0.1s;
+      animation-iteration-count: 9;
+      animation-delay: 0.9s;
+      transition-delay: 0.9s;
+      transition-property: opacity;
+  }
+  
+  @keyframes blink {
+      0% {background-color: #ffffff;}
+      100% {background-color: #3300ff;}
+  }
+  
+  span.stage-holder-button.active {
+      background-color: #3300ff;
+      pointer-events: none;
+  }
+}

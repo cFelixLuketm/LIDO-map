@@ -1,0 +1,177 @@
+
+// back button 
+
+section.back-nav {
+    width: 100vw;
+    position: fixed;
+    top: 60px;
+    left: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5vw;
+    z-index: 1;
+}
+
+
+section.page-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    pointer-events: none;
+}
+
+section.date-nav {
+    width: 100vw;
+    position: fixed;
+    bottom: 45px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5vw;
+    z-index: 1;
+}
+
+div.weekend-wrapper {
+    display: flex;
+    gap: 2.5vw;
+}
+
+span.back-holder {
+    background-color: #918da8;
+    height: fit-content ;
+    height: calc(30px / 1.23);
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+}
+
+span.back-holder:hover {
+  background-color: #3300ff;
+}
+
+span.back-holder.loaded {
+    opacity: 1;
+    animation: flickerload 0.1s;
+    animation-iteration-count: 7;
+    animation-delay: 0.7s;
+    transition-delay: 0.7s;
+    transition-property: opacity;
+}
+
+span.date-holder {
+    background-color: #918da8;
+    height: fit-content ;
+    height: calc(30px / 1.23);
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+}
+
+span.date-holder.loaded:nth-child(1) {
+    opacity: 1;
+    animation: flickerload 0.1s;
+    animation-iteration-count: 7;
+    animation-delay: 0.7s;
+    transition-delay: 0.7s;
+    transition-property: opacity;
+}
+
+span.date-holder.loaded:nth-child(2) {
+    opacity: 1;
+    animation: flickerload 0.1s;
+    animation-iteration-count: 5;
+    animation-delay: 0.6s;
+    transition-delay: 0.6s;
+    transition-property: opacity;
+}
+
+span.date-holder.loaded:nth-child(3) {
+    opacity: 1;
+    animation: flickerload 0.1s;
+    animation-iteration-count: 9;
+    animation-delay: 0.9s;
+    transition-delay: 0.9s;
+    transition-property: opacity;
+}
+
+span.date-holder:hover {
+    background-color: #3300ff;
+    animation: blink 0.1s linear infinite;
+}
+
+@keyframes blink {
+    0% {background-color: #ffffff;}
+    100% {background-color: #3300ff;}
+}
+
+span.date-holder.active {
+    background-color: #3300ff;
+}
+
+div#bottomPadding {
+    display: none;
+    background-color: #3300ff;
+    height: 4px;
+    width: 100vw;
+    position: fixed;
+    bottom: 0px;
+    z-index: 1;
+}
+
+@media (max-width: 1200px) {
+    span.date-holder {
+        height: calc(25px / 1.23);
+    }
+}
+
+@media (max-width: 980px) {
+    span.date-holder {
+        height: calc(20px / 1.23);
+    }
+}
+
+// mobile
+@media (max-width: 750px) {
+    section.date-nav {
+        bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+    } 
+
+    div.weekend-wrapper {
+        flex-direction: column;
+        justify-content: end;
+        gap: 0vw;
+    }
+
+    span.date-holder {
+        height: calc(25px / 1.23);
+        display: flex;
+        width: fit-content
+    }
+
+    #june7 {
+        margin-left: -10px;
+    }
+
+    #june13 {
+        margin-left: -10px;
+    }
+
+    #june14 {
+        margin-right: -10px;
+    }
+
+    span.date-holder:hover {
+        background-color: #3300ff;
+        animation: blink 0.1s linear 3;
+    }
+}

@@ -1,0 +1,271 @@
+ 
+
+body { font-family: BB_Body_Font, serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "NeueHaasDisplay-Black";
+  letter-spacing: -1.25px;
+}
+
+sup {
+  font-family: "NeueHaasDisplay-Black";
+  font-size: 18.5px;
+  position: absolute;
+}
+
+ul.header_row {
+  font-family: "NeueHaasDisplay-Roman";
+  font-size: 12px;
+  color: #3300ff;
+  line-height: 1;
+}
+
+p.header_row {
+  font-family: "NeueHaasDisplay-Roman";
+  font-size: 12px;
+  color: #3300ff;
+  line-height: 1;
+}
+
+// Character Styles
+.bold { font-weight: 700; }
+.regular { font-weight: 400; }
+.light { font-weight: 300; }
+.medium { font-weight: 500; }
+
+
+.italic { font-style: italic; }
+.caps { text-transform: uppercase; }
+.leading { line-height: 1.2em; }
+.leading-loose { line-height: 1.5em; }
+
+.loading-text__container {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+#loading-text {
+  font-family: "NeueHaasDisplay-Roman";
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0px;
+  color: #3300ff;
+}
+
+// Type Styles
+
+p.nav-text {
+  font-family: "playextra";
+  font-size: 0.7vw;
+  color: #ffffff;
+  margin-bottom: 0em;
+}
+
+
+body {
+  font-size: var(--p);
+  @extend .leading, .light;
+}
+
+p, address {
+    font-size: var(--p);
+    @extend .leading-loose;
+}
+
+strong { @extend .bold; }
+
+
+
+a {
+    color: inherit;
+}
+
+// nav, footer {
+//   @include type(13px, 15px);
+
+
+//   p, a {
+//     @include type(13px, 15px);
+//   }
+// }
+
+// aside {
+//   @include type(13px, 15px);
+//   line-height: 1.2;
+// }
+
+h1 {
+  font-size: 100px;
+  line-height: 1;
+  font-weight: normal;
+  color: #bfbabd;
+  white-space: nowrap;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 1;
+  font-weight: normal;
+  color: #bfbabd;
+  white-space: nowrap;
+}
+
+h2.site-map {
+  padding-top: 1px;
+}
+
+h3 {
+  font-family: "NeueHaasDisplay-Roman";
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0px;
+}
+
+h3.north{
+  background-color: #999999;
+  color: #bfbabd;
+  width: fit-content;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+h3.south {
+  background-color: #16b874;
+  color: #bfbabd;
+  width: fit-content;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+// Measurement
+
+h4 {
+  font-size: 9px;
+  letter-spacing: -.25px;
+  color: #bfbabd;
+  line-height: 1em;
+  white-space: nowrap;
+}
+
+p.detail {
+  font-family: "NeueHaasDisplay-Roman";
+  font-size: 9px;
+  letter-spacing: -.25px;
+  color: #bfbabd;
+  line-height: 1em;
+  white-space: nowrap;
+}
+
+h5 {
+  font-family: "NeueHaasDisplay-Roman";
+  font-size: 40px;
+  line-height: 1;
+  font-weight: normal;
+  color: #3300ff;
+  white-space: wrap;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+h5.times {
+  white-space: nowrap;
+}
+
+span.act:nth-child(even) h5 {
+  color: #918da8;
+  background-color: rgb(0, 0, 0);
+  height: min-content;
+   width:fit-content;
+}
+
+span.act:nth-child(odd) h5 {
+  color: #918da8;
+  background-color: #3300ff;
+  height: min-content;
+  width: fit-content;
+}
+
+span.act:nth-child(1) h5 {
+  color: #3300ff;
+  background-color: #d1c4c3;
+  height: min-content;
+  width: fit-content;
+}
+
+span.act h5.TBA {
+  font-family: "NeueHaasDisplay-Black";
+  letter-spacing: -1.25px;
+  color: #918da8;
+  background-color:  #bfbabd;
+  height: min-content;
+   width:fit-content;
+}
+
+
+
+@media (max-width: 1200px) {
+  h2 {
+    font-size: 25px;
+  }
+
+  sup {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 980px) {
+  h2 {
+    font-size: 20px;
+  }
+
+    sup {
+    font-size: 14px;
+  }
+}
+
+
+
+// mobile
+@media (max-width: 750px) {
+
+  h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -1px;
+  }
+
+  h1 {
+    font-size: 18.75vw;
+    // font-size: clamp(2.3rem, -5.5rem + 41.5vw, 4.75rem);
+    line-height: 1;
+    font-weight: normal;
+    color: #bfbabd;
+    white-space: nowrap;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  h5 {
+    font-family: "NeueHaasDisplay-Roman";
+    font-size: 7.5vw;
+    line-height: 1;
+    font-weight: normal;
+    color: #3300ff;
+    white-space: wrap;
+  }
+
+  p.header_row {
+    font-size: 9px;
+  }
+
+  ul.header_row {
+    font-size: 9px;
+  }
+
+}

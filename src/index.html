@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="icon" type="image/x-icon" href="../img/favicon-32x32.png" />
+        <link rel="stylesheet" href="./scss/style.scss" />
+        <script type="module" defer src="./js/main.js"></script>
+        <title>LIDO Map</title>
+    </head>
+    <body>
+      <!-- header -->
+      <header class="header">
+          <nav class="left">
+            <ul id="header1" class="header_row">
+              LIDO[2025]SITEMAP
+            </ul>
+          </nav>
+          <nav class="right">
+            <ul id="header2" class="header_row">
+              COUNTDOWN:
+            </ul>
+            <span class="countdown-wrapper">
+              <p class="header_row counter" id="countdown">
+                --:--:--:--
+              </p>
+              <p id="header4" class="header_row counter">
+                DD:MM:HH:SS
+              </p>
+            </span>
+          </nav>
+      </header>
+
+      <!-- back button -->
+      <span id="dateContainer">
+        <section class="back-nav">
+          <div class="weekend-wrapper">
+            <span id="backButton" class="back-holder">
+                <h2>Back</h2>
+            </span>
+          </div>
+        </section>
+      </span>
+
+      <!-- mobile header -->
+      <div class="mobile-stage-selection-wrapper">
+          <span id="mainStageMobileButton" class="stage-holder-button">
+              <h2>Main Stage</h2>
+          </span>
+          <span id="stage2MobileButton" class="stage-holder-button">
+              <h2>Stage 2</h2>
+          </span>
+          <span id="stage3MobileButton" class="stage-holder-button">
+              <h2>Stage 3</h2>
+          </span>
+      </div>
+      <!-- date navigation -->
+      <span id="dateContainer">
+        <section class="date-nav">
+          <div class="weekend-wrapper">
+            <span id="june6" class="date-holder selected active" data-target="june6" onclick="showMatchingTarget('june6')">
+                <h2>Friday 6<sup class="superscript">th</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;June</h2>
+            </span>
+            <span id="june7" class="date-holder" data-target="june7" onclick="showMatchingTarget('june7')">
+                <h2>Saturday 7<sup class="superscript">th</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;June</h2>
+            </span>
+          </div>
+          <div class="weekend-wrapper">
+            <span id="june13" class="date-holder" data-target="june13" onclick="showMatchingTarget('june13')">
+                <h2>Friday 13<sup class="superscript">th</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;June</h2>
+            </span>
+            <span id="june14" class="date-holder" data-target="june14" onclick="showMatchingTarget('june14')">
+                <h2>Saturday 14<sup class="superscript">th</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;June</h2>
+            </span>
+            <span id="june15" class="date-holder" data-target="june15" onclick="showMatchingTarget('june15')">
+                <h2>Sunday 15<sup class="superscript">th</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;June</h2>
+            </span>
+          </div>
+        </section>
+      </span>
+      <!-- cursor bar -->
+      <main>
+        <!-- line-ups -->
+
+      <!-- stage 1 -->
+
+      <!-- june 6 -->
+        <div class="lineup mainstage" data-target="mainstage">
+          <div id="stage" class="stage" data-target="june6">
+            <span class="stage-holder">
+                <h1>Main Stage</h1>
+            </span>
+          </div>
+          <div class="lineup-wrapper" data-target="june6">
+              <span class="act">
+                <span class="lineup-holder one">
+                  <h5 class="acts headliner">Massive Attack</h5>
+                </span>
+                <span class="lineup-holder">
+                  <h5 class="times headliner-time">21:25—22:55</h5>
+                </span>
+              </span>
+              <span class="act">
+                <span class="lineup-holder one">
+                  <h5 class="acts">AIR</h5>
+                </span>
+                <span class="lineup-holder">
+                  <h5 class="times">19:30—20:30</h5>
+                </span>
+              </span>
+              <span class="act">
+                <span class="lineup-holder one">
+                  <h5 class="acts">Tirzah</h5>
+                </span>
+                <span class="lineup-holder">
+                  <h5 class="times">16:45—17:25</h5>
+                </span>
+              </span>
+          </div>
+        </div>
+
+      <!-- june 7 -->
+        <div class="lineup mainstage" data-target="mainstage">
+          <div id="stage" class="stage" data-target="june7">
+            <span class="stage-holder">
+                <h1>Main Stage</h1>
+            </span>
+          </div>
+          <div class="lineup-wrapper" data-target="june7">
+              <span class="act">
+                <span class="lineup-holder one">
+                  <h5 class="acts headliner">Jamie xx</h5>
+                </span>
+                <span class="lineup-holder">
+                  <h5 class="times headliner-time">21:25—22:55</h5>
+                </span>
+              </span>
+              <span class="act">
+                <span class="lineup-holder one">
+                  <h5 class="acts">Arca</h5>
+                </span>
+                <span class="lineup-holder">
+                  <h5 class="times">19:45—20:45</h5>
+                </span>
+              </span>
+              <span class="act">
+                <span class="lineup-holder one">
+                  <h5 class="acts">Sampha</h5>
+                </span>
+                <span class="lineup-holder">
+                  <h5 class="times">18:05—19:05</h5>
+                </span>
+              </span>
+              <span class="act">
+                <span class="lineup-holder one">
+                  <h5 class="acts">Panda Bear</h5>
+                </span>
+                <span class="lineup-holder">
+                  <h5 class="times">16:50—17:30</h5>
+                </span>
+              </span>
+              <span class="act">
+                <span class="lineup-holder one">
+                  <h5 class="acts">John Glacier</h5>
+                </span>
+                <span class="lineup-holder">
+                  <h5 class="times">15:40—16:20</h5>
+                </span>
+              </span>
+              <span class="act">
+                <span class="lineup-holder two">
+                  <h5 class="acts">Jamie xx b2b Skrillex</h5>
+                </span>
+                <span class="lineup-holder">
+                  <h5 class="times">14:10—15:40</h5>
+                </span>
+              </span>
+          </div>
+        </div>
+
+      <!-- june 13 -->
+        <div class="lineup mainstage" data-target="mainstage">
+          <div id="stage" class="stage" data-target="june13">
+            <span class="stage-holder">
+                <h1>Main Stage</h1>
+            </span>
+          </div>
+          <div class="lineup-wrapper" data-target="june13">
+              <span class="act">
+                <span class="lineup-holder one">
+                  <h5 class="acts headliner">Turnstile</h5>
+                </span>
+                <span class="lineup-holder">
+                  <h5 class="times headliner-time">21:25—22:55</h5>
+                </span>
+              </span>
+              <span class="act">
+                <span class="lineup-holder one">
+                  <h5 class="acts">Alex G</h5>
+                </span>
+                <span class="lineup-holder">
+                  <h5 class="times">19:35—20:35</h5>
+                </span>
+              </span>
+              <span class="act">
+                <span class="lineup-holder one">
+                  <h5 class="acts">Danny Brawn</h5>
+                </span>
+                <span class="lineup-holder">
+                  <h5 class="times">18:20—18:55</h5>
+                </span>
+              </span>
+              <span class="act">
+                <span class="lineup-holder one">
+                  <h5 class="acts">Julie</h5>
+                </span>
+                <span class="lineup-holder">
+                  <h5 class="times">17:20—17:50</h5>
+                </span>
+              </span>
+              <span class="act">
+                <span class="lineup-holder one">
+                  <h5 class="acts">Fleshwater</h5>
+                </span>
+                <span class="lineup-holder">
+                  <h5 class="times">16:20—16:50</h5>
+                </span>
+              </span>
+              <span class="act">
+                <span class="lineup-holder one">
+                  <h5 class="acts">Momma</h5>
+                </span>
+                <span class="lineup-holder">
+                  <h5 class="times">15:20—15:50</h5>
+                </span>
+              </span>
+          </div>
+        </div>
+
+      <!-- june 14 -->
+        <div class="lineup mainstage" data-target="mainstage">
+          <div id="stage" class="stage" data-target="june14">
+            <span class="stage-holder">
+                <h1>Main Stage</h1>
+            </span>
+          </div>
+          <div class="lineup-wrapper" data-target="june14">
+              <span class="act">
+                <span class="lineup-holder one">
+                  <h5 class="acts headliner">Charli XCX</h5>
+                </span>
+                <span class="lineup-holder">
+                  <h5 class="times headliner-time">21:25—22:55</h5>
+                </span>
+              </span>
+              <span class="act">
+                <span class="lineup-holder one">
+                  <h5 class="acts">Gesaffelstein</h5>
+                </span>
+                <span class="lineup-holder">
+                  <h5 class="times">19:15—20:25</h5>
+                </span>
+              </span>
+              <span class="act">
+                <span class="lineup-holder two">
+                  <h5 class="acts">The Japanese House</h5>
+                </span>
+                <span class="lineup-holder">
+                  <h5 class="times">17:45—18:30</h5>
+                </span>
+              </span>
+              <span class="act">
+                <span class="lineup-holder one">
+                  <h5 class="acts">070 Shake</h5>
+                </span>
+                <span class="lineup-holder">
+                  <h5 class="times">16:35—17:10</h5>
+                </span>
+              </span>
+              <span class="act">
+                <span class="lineup-holder one">
+                  <h5 class="acts">AG Cook</h5>
+                </span>
+                <span class="lineup-holder">
+                  <h5 class="times">15:30—16:05</h5>
+                </span>
+              </span>
+              <span class="act">
+                <span class="lineup-holder one">
+                  <h5 class="acts">Jodie Harsh</h5>
+                </span>
+                <span class="lineup-holder">
+                  <h5 class="times">14:30—15:00</h5>
+                </span>
+              </span>
+          </div>
+        </div>
+
+      <!-- june 15 -->
+        <div class="lineup mainstage" data-target="mainstage">
+          <div id="stage" class="stage" data-target="june15">
+            <span class="stage-holder">
+                <h1>Main Stage</h1>
+            </span>
+          </div>
+          <div class="lineup-wrapper" data-target="june15">
+              <span class="act">
+                <span class="lineup-holder one">
+                  <h5 class="acts headliner">London Grammer</h5>
+                </span>
+                <span class="lineup-holder">
+                  <h5 class="times headliner-time">20:55—22:25</h5>
+                </span>
+              </span>
+              <span class="act">
+                <span class="lineup-holder one">
+                  <h5 class="acts">Celeste</h5>
+                </span>
+                <span class="lineup-holder">
+                  <h5 class="times">18:55—19:55</h5>
+                </span>
+              </span>
+              <span class="act">
+                <span class="lineup-holder one">
+                  <h5 class="acts">Roisin Murphy</h5>
+                </span>
+                <span class="lineup-holder">
+                  <h5 class="times">17:20—18:20</h5>
+                </span>
+              </span>
+              <span class="act">
+                <span class="lineup-holder one">
+                  <h5 class="acts">Wasia Project</h5>
+                </span>
+                <span class="lineup-holder">
+                  <h5 class="times">16:15—16:50</h5>
+                </span>
+              </span>
+              <span class="act">
+                <span class="lineup-holder one">
+                  <h5 class="acts">Dan Whitlam</h5>
+                </span>
+                <span class="lineup-holder">
+                  <h5 class="times">15:20—15:50</h5>
+                </span>
+              </span>
+          </div>
+        </div>
+
+
+
+
+
+      <!-- stage 2 -->
+
+      <!-- june 6 -->
+        <div class="lineup stage2" data-target="stage2">
+          <div id="stage" class="stage" data-target="june6">
+            <span class="stage-holder">
+                <h1>Stage 2</h1>
+            </span>
+          </div>
+          <div class="lineup-wrapper" data-target="june6">
+            <span class="act">
+              <span class="lineup-holder three">
+                <h5 class="acts headliner">Forensics - Yasiin Bey & The Alchemist</h5>
+              </span>
+              <span class="lineup-holder">
+                <h5 class="times headliner-time">18:30—19:30</h5>
+              </span>
+            </span>
+          </div>
+        </div>
+
+      <!-- june 7 -->
+        <div class="lineup stage2" data-target="stage2">
+          <div id="stage" class="stage" data-target="june7">
+            <span class="stage-holder">
+                <h1>Stage 2</h1>
+            </span>
+          </div>
+          <div class="lineup-wrapper" data-target="june7">
+            <span class="act">
+              <span class="lineup-holder one">
+                <h5 class="acts headliner">Romy</h5>
+              </span>
+              <span class="lineup-holder">
+                <h5 class="times headliner-time">20:15—21:15</h5>
+              </span>
+            </span>
+            <span class="act">
+              <span class="lineup-holder two">
+                <h5 class="acts">Todd Edwards b2b Bullet Tooth</h5>
+              </span>
+              <span class="lineup-holder">
+                <h5 class="times">18:30—19:30</h5>
+              </span>
+            </span>
+            <span class="act">
+              <span class="lineup-holder one">
+                <h5 class="acts">DJ Gigola</h5>
+              </span>
+              <span class="lineup-holder">
+                <h5 class="times">17:30—18:30</h5>
+              </span>
+            </span>
+            <span class="act">
+              <span class="lineup-holder two">
+                <h5 class="acts">Jamie xx b2b Nia Archives</h5>
+              </span>
+              <span class="lineup-holder">
+                <h5 class="times">16:30—17:30</h5>
+              </span>
+            </span>
+            <span class="act">
+              <span class="lineup-holder two">
+                <h5 class="acts">Shy FX b2b Tim Reaper</h5>
+              </span>
+              <span class="lineup-holder">
+                <h5 class="times">15:30—16:30</h5>
+              </span>
+            </span>
+            <span class="act">
+              <span class="lineup-holder one">
+                <h5 class="acts">Villager</h5>
+              </span>
+              <span class="lineup-holder">
+                <h5 class="times">14:30—15:30</h5>
+              </span>
+            </span>
+          </div>
+        </div>
+
+      <!-- june 13 -->
+        <div class="lineup stage2" data-target="stage2">
+          <div id="stage" class="stage" data-target="june13">
+            <span class="stage-holder">
+                <h1>Stage 2</h1>
+            </span>
+          </div>
+          <div class="lineup-wrapper" data-target="june13">
+            <span class="act">
+              <span class="lineup-holder one">
+                <h5 class="acts headliner">Knocked Loose</h5>
+              </span>
+              <span class="lineup-holder">
+                <h5 class="times headliner-time">20:15—21:15</h5>
+              </span>
+            </span>
+            <span class="act">
+              <span class="lineup-holder one">
+                <h5 class="acts headliner">Glassjaw</h5>
+              </span>
+              <span class="lineup-holder">
+                <h5 class="times headliner-time">18:45—19:30</h5>
+              </span>
+            </span>
+            <span class="act">
+              <span class="lineup-holder one">
+                <h5 class="acts headliner">Superheaven</h5>
+              </span>
+              <span class="lineup-holder">
+                <h5 class="times headliner-time">17:40—18:10</h5>
+              </span>
+            </span>
+            <span class="act">
+              <span class="lineup-holder one">
+                <h5 class="acts headliner">Speed</h5>
+              </span>
+              <span class="lineup-holder">
+                <h5 class="times headliner-time">16:35—17:10</h5>
+              </span>
+            </span>
+            <span class="act">
+              <span class="lineup-holder one">
+                <h5 class="acts headliner">Drug Church</h5>
+              </span>
+              <span class="lineup-holder">
+                <h5 class="times headliner-time">15:30—16:05</h5>
+              </span>
+            </span>
+            <span class="act">
+              <span class="lineup-holder one">
+                <h5 class="acts headliner">Kumo 99</h5>
+              </span>
+              <span class="lineup-holder">
+                <h5 class="times headliner-time">14:35—15:00</h5>
+              </span>
+            </span>
+          </div>
+        </div>
+
+      <!-- june 14 -->
+        <div class="lineup stage2" data-target="stage2">
+          <div id="stage" class="stage" data-target="june14">
+            <span class="stage-holder">
+                <h1>Stage 2</h1>
+            </span>
+          </div>
+          <div class="lineup-wrapper" data-target="june14">
+            <span class="act">
+              <span class="lineup-holder one">
+                <h5 class="acts headliner">Bladee</h5>
+              </span>
+              <span class="lineup-holder">
+                <h5 class="times headliner-time">20:15—21:15</h5>
+              </span>
+            </span>
+            <span class="act">
+              <span class="lineup-holder one">
+                <h5 class="acts headliner">The Dare</h5>
+              </span>
+              <span class="lineup-holder">
+                <h5 class="times headliner-time">18:35—19:30</h5>
+              </span>
+            </span>
+            <span class="act">
+              <span class="lineup-holder one">
+                <h5 class="acts headliner">Kelly Lee Owens</h5>
+              </span>
+              <span class="lineup-holder">
+                <h5 class="times headliner-time">17:15—18:00</h5>
+              </span>
+            </span>
+            <span class="act">
+              <span class="lineup-holder one">
+                <h5 class="acts headliner">Magdelena Bay</h5>
+              </span>
+              <span class="lineup-holder">
+                <h5 class="times headliner-time">16:05—16:45</h5>
+              </span>
+            </span>
+          </div>
+        </div>
+
+      <!-- june 15 -->
+        <div class="lineup stage2" data-target="stage2">
+          <div id="stage" class="stage" data-target="june15">
+            <span class="stage-holder">
+                <h1>Stage 2</h1>
+            </span>
+          </div>
+          <div class="lineup-wrapper" data-target="june15">
+            <span class="act">
+              <span class="lineup-holder two">
+                <h5 class="acts headliner">The Blessed Madonna</h5>
+              </span>
+              <span class="lineup-holder">
+                <h5 class="times headliner-time">19:45—20:45</h5>
+              </span>
+            </span>
+            <span class="act">
+              <span class="lineup-holder one">
+                <h5 class="acts headliner">Maverick Sabre</h5>
+              </span>
+              <span class="lineup-holder">
+                <h5 class="times headliner-time">18:30—19:15</h5>
+              </span>
+            </span>
+            <span class="act">
+              <span class="lineup-holder one">
+                <h5 class="acts headliner">Neil Frances</h5>
+              </span>
+              <span class="lineup-holder">
+                <h5 class="times headliner-time">16:55—17:55</h5>
+              </span>
+            </span>
+            <span class="act">
+              <span class="lineup-holder one">
+                <h5 class="acts headliner">Pip Millet</h5>
+              </span>
+              <span class="lineup-holder">
+                <h5 class="times headliner-time">15:35—16:20</h5>
+              </span>
+            </span>
+            <span class="act">
+              <span class="lineup-holder one">
+                <h5 class="acts headliner">Clementine Douglas</h5>
+              </span>
+              <span class="lineup-holder">
+                <h5 class="times headliner-time">14:30—15:00</h5>
+              </span>
+            </span>
+          </div>
+        </div>
+
+
+
+
+
+
+      <!-- stage 3 -->
+
+      <!-- june 6 -->
+        <div class="lineup stage3" data-target="stage3">
+          <div id="stage" class="stage" data-target="june6">
+            <span class="stage-holder">
+                <h1>Stage 3</h1>
+            </span>
+          </div>
+          <div class="lineup-wrapper" data-target="june6">
+            <span class="act">
+              <span class="lineup-holder one">
+                <h5 class="acts headliner">NO ACTS</h5>
+              </span>
+              <span class="lineup-holder">
+                <h5 class="times headliner-time"></h5>
+              </span>
+            </span>
+          </div>
+        </div>
+
+      <!-- june 7 -->
+        <div class="lineup stage3" data-target="stage3">
+          <div id="stage" class="stage" data-target="june7">
+            <span class="stage-holder">
+                <h1>Stage 3</h1>
+            </span>
+          </div>
+          <div class="lineup-wrapper" data-target="june7">
+            <span class="act">
+              <span class="lineup-holder one">
+                <h5 class="acts headliner">DJ Harvey</h5>
+              </span>
+              <span class="lineup-holder">
+                <h5 class="times headliner-time">18:15—21:15</h5>
+              </span>
+            </span>
+            <span class="act">
+              <span class="lineup-holder one">
+                <h5 class="acts">Wookie</h5>
+              </span>
+              <span class="lineup-holder">
+                <h5 class="times">17:00—18:15</h5>
+              </span>
+            </span>
+            <span class="act">
+              <span class="lineup-holder one">
+                <h5 class="acts">Livmutang</h5>
+              </span>
+              <span class="lineup-holder">
+                <h5 class="times">16:00—17:00</h5>
+              </span>
+            </span>
+            <span class="act">
+              <span class="lineup-holder one">
+                <h5 class="acts">Stresshead</h5>
+              </span>
+              <span class="lineup-holder">
+                <h5 class="times">13:30—14:00</h5>
+              </span>
+            </span>
+          </div>
+        </div>
+
+      <!-- june 13 -->
+        <div class="lineup stage3" data-target="stage3">
+          <div id="stage" class="stage" data-target="june13">
+            <span class="stage-holder">
+                <h1>Stage 3</h1>
+            </span>
+          </div>
+          <div class="lineup-wrapper" data-target="june13">
+            <span class="act">
+              <span class="lineup-holder two">
+                <h5 class="acts headliner">Sunny Day Real Estate</h5>
+              </span>
+              <span class="lineup-holder">
+                <h5 class="times headliner-time">20:15—21:15</h5>
+              </span>
+            </span>
+            <span class="act">
+              <span class="lineup-holder one">
+                <h5 class="acts headliner">Have a Nice Life</h5>
+              </span>
+              <span class="lineup-holder">
+                <h5 class="times headliner-time">18:40—19:25</h5>
+              </span>
+            </span>
+            <span class="act">
+              <span class="lineup-holder one">
+                <h5 class="acts headliner">Model/Actriz</h5>
+              </span>
+              <span class="lineup-holder">
+                <h5 class="times headliner-time">17:40—18:10</h5>
+              </span>
+            </span>
+            <span class="act">
+              <span class="lineup-holder one">
+                <h5 class="acts headliner">Jane Remover</h5>
+              </span>
+              <span class="lineup-holder">
+                <h5 class="times headliner-time">16:40—17:10</h5>
+              </span>
+            </span>
+            <span class="act">
+              <span class="lineup-holder two">
+                <h5 class="acts headliner">Feeble Little Horse</h5>
+              </span>
+              <span class="lineup-holder">
+                <h5 class="times headliner-time">15:40—16:10</h5>
+              </span>
+            </span>
+            <span class="act">
+              <span class="lineup-holder three">
+                <h5 class="acts headliner">They Are Gutting a Body of Water</h5>
+              </span>
+              <span class="lineup-holder">
+                <h5 class="times headliner-time">14:40—15:10</h5>
+              </span>
+            </span>
+          </div>
+        </div>
+
+      <!-- june 14 -->
+        <div class="lineup stage3" data-target="stage3">
+          <div id="stage" class="stage" data-target="june14">
+            <span class="stage-holder">
+                <h1>Stage 3</h1>
+            </span>
+          </div>
+          <div class="lineup-wrapper" data-target="june14">
+            <span class="act">
+              <span class="lineup-holder one">
+                <h5 class="acts headliner">NO ACTS</h5>
+              </span>
+              <span class="lineup-holder">
+                <h5 class="times headliner-time"></h5>
+              </span>
+            </span>
+          </div>
+        </div>
+
+      <!-- june 15 -->
+        <div class="lineup stage3" data-target="stage3">
+          <div id="stage" class="stage" data-target="june15">
+            <span class="stage-holder">
+                <h1>Stage 3</h1>
+            </span>
+          </div>
+          <div class="lineup-wrapper" data-target="june15">
+            <span class="act">
+              <span class="lineup-holder one">
+                <h5 class="acts headliner">Holly Walker</h5>
+              </span>
+              <span class="lineup-holder">
+                <h5 class="times headliner-time">19:10—19:50</h5>
+              </span>
+            </span>
+            <span class="act">
+              <span class="lineup-holder one">
+                <h5 class="acts headliner">Olivia Lunny</h5>
+              </span>
+              <span class="lineup-holder">
+                <h5 class="times headliner-time">18:10—18:40</h5>
+              </span>
+            </span>
+          </div>
+        </div>
+
+        <script>
+          const allDataTargets = document.querySelectorAll('[data-target]');
+              // date interaction
+              function showMatchingTarget(targetValue) {
+                console.log('date:', targetValue);
+                allDataTargets.forEach(dataTarget => {
+                  if (dataTarget.dataset.target === targetValue) {
+                    dataTarget.classList.add("selected");
+                    Array.from(dataTarget.children).forEach(child => {
+                      child.classList.add('active');
+                    });
+                  } else {
+                    dataTarget.classList.remove("selected");
+                    Array.from(dataTarget.children).forEach(child => {
+                      child.classList.remove('active');
+                    });
+                  }
+                });
+              }
+          
+              document.querySelector('.mainstage').classList.add('initlineup');
+              document.querySelector('.stage2').classList.add('initlineup');
+              document.querySelector('.stage3').classList.add('initlineup');
+          
+              const initLineUps = document.querySelectorAll(".initlineup");
+              initLineUps.forEach(lineUp => {
+                lineUp.classList.add('selected');
+                lineUp.querySelector(".stage").classList.add('selected');
+                const actWrapper = lineUp.querySelector(".lineup-wrapper");
+                actWrapper.classList.add('selected');
+                const acts = actWrapper.querySelectorAll(".act");
+                acts.forEach(act => {
+                  act.classList.add("active");
+                })
+              });
+          </script>
+        
+
+
+        <div id="cursorNotch"></div>
+        <div id="cursorBar" class="cursor_bar">
+          <span id="coordinates" class="coordinates-wrapper">
+            <h3 class="north">51° 32' 6.846'' N</h3>
+            <h3 class="south">0° 2' 25.9044'' W</h3>
+          </span>
+          <span class="logo-wrapper">
+            <img src="./img/logo.svg" class="logo">
+            <h2 id="siteMap" class="site-map">Site Map</h2>
+          </span>
+          <span class="ruler-container">
+            <span id="rulerWrapper">
+            <div class="top-line"></div>
+              <div id="ruler" class='ruler'>
+                <div class='cm'>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                </div>
+                <div class='cm'>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                </div>
+                <div class='cm'>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                </div>
+                <div class='cm'>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                </div>
+                <div class='cm'>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                </div>
+                <div class='cm'>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                </div>
+                <div class='cm'>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                </div>
+                <div class='cm'>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                </div>
+                <div class='cm'>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                </div>
+                <div class='cm'>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                </div>
+                <div class='cm'>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                </div>
+                <div class='cm'></div>
+              </div>
+            </span>
+            <div id="units" class="measurement">
+              <h4>UNITS:</h4><p id="measurement" class="detail">M2</p>
+            </div>
+            <div id="day" class="date">
+              <h4>DAY:</h4><p id="date" class="detail">Friday 6th June</p>
+            </div>
+            <div id="headlineWrapper" class="headline">
+              <h4>HEADLINE:</h4><p id="headline" class="detail">Massive Attack</p>
+            </div>
+          </span>
+        </div>
+      
+        <div class="loading-text__container">
+          <span id="loading-text"></span>
+        </div>
+        <canvas id="three-canvas"></canvas>
+      </main>
+
+      <footer id="footer" class="footer"> 
+        <div class="top-line-footer"></div>
+        <div id="ruler" class='footer-ruler'>
+          <div class='cm'>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          </div>
+          <div class='cm'>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          </div>
+          <div class='cm'>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          </div>
+          <div class='cm'>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          </div>
+          <div class='cm'>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          </div>
+          <div class='cm'>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          </div>
+          <div class='cm'>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          </div>
+          <div class='cm'>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          </div>
+          <div class='cm'>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          </div>
+          <div class='cm'>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          </div>
+          <div class='cm'>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          </div>
+          <div class='cm'>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          </div>
+          <div class='cm'>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          </div>
+          <div class='cm'>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          </div>
+          <div class='cm'>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          </div>
+          <div class='cm'>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          </div>
+          <div class='cm'>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          </div>
+          <div class='cm'>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          </div>
+          <div class='cm'></div>
+        </div>
+        <div id="bottomPadding"></div>
+      </footer>
+    </body>
+</html>
